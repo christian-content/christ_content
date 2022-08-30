@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Bogart Trial ;
+    min-width: 320px;
+    background: url(image/photo1.jpg);
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+li {
+    list-style: none;
+}
+h1 {
+    color: cornsilk;
+    text-align: center;
+}
+h3 {
+    color: darkgray;
+    font-size: 21px;
+    margin-left:140px ;
+    margin-right: 140px;
+    margin-top: 50px;
+}
+h4 {
+    color: antiquewhite;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 520px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    border-top: 2px solid rosybrown;
+    border-left: 2px solid rosybrown;
+    border-right: 2px solid rosybrown;
+    width: 300px;
+    
+}
+span {
+    color: rgb(219, 172, 141);
+}
+.container {
+    width: auto;
+}
+.popup {
+    background-color: darkgrey;
+    margin-left: 520px;
+    padding-top: 3px;
+    padding-left: 10px;
+    width: 300px;
+    height: 80px;
+    text-decoration: underline;
+    border-bottom: 5px solid rgb(68, 23, 23);
+    border-left: 5px solid rgb(68, 23, 23);
+    border-right: 5px solid rgb(68, 23, 23);
+    float: left;
+
+}
+.box-shadow {
+    margin-left: -750px;
+    margin-top: 0px;
+    width: 110px;
+    height: 50px;
+    border-radius: 50px;
+    float: left;
+}
+.box-shadow img {
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.box-shadow img:hover {
+    width: 37px;
+    height: 37px;
+    background-color: rgb(136, 138, 137);
+    padding:3px 3px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 20px;
+    height: 100px;
+    color: white;
+}
+.nav-links {
+    color: aquamarine;
+}
+.logo  {
+    margin-left: 100px;
+    display: inline-flex;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+.logo h2 {
+    font-size: 30px;
+    margin-top:20px ;
+}
+.logo span {
+    color: coral;
+}
+.menu {
+    display: flex;
+    font-size: 21px;
+    margin-left: 200px;
+}
+.menu li {
+    padding: 5px 20px;
+}
+.menu li a:hover {
+    transition: all 0.50s;
+    color: rgb(243, 220, 191);
+    font-size: 25px;
+    border-bottom: 3px solid rgb(248, 106, 106);
+    border-top: 3px solid rgb(248, 106, 106);
+}
+#checkbox_toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger-line {
+    background-color: wheat;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    border-radius: 3px;
+}
+.hamburger-line::before,
+.hamburger-line::after {
+    background-color: wheat;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+.hamburger-line::before {
+    top: 7px;
+}
+.hamburger-line::after {
+    top: -7px;
+}
+@media (max-width:1024px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        margin-left: 50px;
+        margin-top: 5px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    h4 {
+        margin-left: 240px;
+        font-size: 25px;
+        width: 400px;
+    }
+    .logo {
+        margin-left: 100px;
+    }
+    .popup {
+        margin-left: 240px;
+        font-size: 22px;
+        width: 400px;
+        height: 110px;
+    }
+    .box-shadow {
+        margin-left: -600px;
+    }
+    .box-shadow img {
+        width: 38px;
+        height: 39px;
+    }
+}
+@media (max-width: 768px) {
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        h3 {
+            margin-left: 30px;
+            margin-right: 0;
+            
+            
+        } 
+        h4 {
+            font-size: 23px;
+            margin-left: 50px;
+            padding-left: 20px;
+        }
+        span {
+            color: rgb(219, 172, 141);
+        }
+        .popup {
+            margin-left: 50px;
+            font-size: 20px;
+            height: 130px;
+        }
+        .box-shadow {
+            margin-left: 270px;
+            margin-top: 0px;
+            float: right;
+            margin-right: 20px;
+        }
+        .box-shadow img {
+            margin-top: 30px;
+        }
+        .logo {
+            margin-left: 50px;
+        }
+    .menu {
+        /*display: none;*/
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        background-color: rgb(174, 174, 219, 0.3);
+        right: 0;
+        left: 0;
+        margin: 0;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 39px;
+        
+    }
+    .menu li  a {
+        color: rgb(235, 212, 137);
+        padding: 15px;
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .menu li a:hover {
+        color: rgb(243, 216, 177);
+        background-color: rgb(182, 182, 238, 0.3);
+        margin: 0;
+        border-bottom: 5px solid rgb(235, 102, 102);
+        border-top: 5px solid rgb(235, 102, 102);
+
+    }
+    .navbar {
+        width: 768px;
+    }
+    .hamburger {
+        display: block;
+        padding: 10px 0px;
+        margin-right: 50px;
+        margin-left: 230px;
+    }
+    #checkbox_toggle:checked ~ .menu {
+        display: block;
+        max-height: 100%;
+        transition: all 2.0s;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+        background-color: transparent;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+        transform: rotate(-45deg);
+        transition: all .50s;
+        top: 0;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+        transform: rotate(45deg);
+        transition: all .50s;
+        top: 0;
+    }
+}
+@media (max-width:425px) {
+    h1 {
+        text-align: center;
+        font-size: 33px;
+    }
+    h3 {
+        margin-left: 15px;
+        text-align: none;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    h4 {
+        font-size: 23px;
+        margin-left: 25px;
+        padding-left: 20px;
+        width: 300px;
+    }
+    span {
+        color: rgb(219, 172, 141);
+    }
+    .popup {
+        margin-left: 25px;
+        font-size: 20px;
+        width: 300px;
+        height: 130px;
+    }
+    .box-shadow {
+        margin-left: 130px;
+        margin-top: 0px;
+        float: none;
+        margin-right: 20px;
+    }
+    .box-shadow img {
+        margin-top: 30px;
+    }
+    .logo  {
+        margin-left: 10px;
+    }
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    .logo h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+.menu {
+    /*display: none;*/
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color:  rgb(73, 71, 71, 0.7 );
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 36px;
+    
+}
+.menu li  a {
+    color: rgb(235, 212, 137);
+    padding: 15px;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+.menu li a:hover {
+    color: rgb(243, 216, 177);
+    background-color: rgb(182, 182, 238, 0.3);
+    margin: 0;
+    border-bottom: 5px solid rgb(235, 102, 102);
+    border-top: 5px solid rgb(235, 102, 102);
+
+}
+.hamburger {
+    display: block;
+    padding: 10px 0px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+}
+
+#checkbox_toggle:checked ~ .menu {
+    display: block;
+    max-height: 100%;
+    transition: all 3.0s;
+}
+#checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+}
+#checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    transition: all 1.0s;
+    top: 0;
+}
+#checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    transition: all 1.0s;
+    top: 0;
+}
+}
+.navbar {
+    width: 425px;
+}
+@media (max-width:375px) {
+    .navbar {
+        width: auto;
+    }
+}
+@media (max-width:320px) {
+    .logo {
+        margin-left: 3px;
+    }
+    h4 {
+        margin-left: 10px;
+        width: 300px;
+    }
+    span {
+        color: rgb(219, 172, 141);
+    }
+    .popup {
+        margin-left: 10px;
+        width: 300px;
+        height: 100px;
+    }
+    .box-shadow {
+        margin-left: 80px;
+    }
+    .navbar {
+        width: 320px;
+    }
+}
